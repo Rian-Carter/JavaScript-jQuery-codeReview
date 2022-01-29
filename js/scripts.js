@@ -1,11 +1,12 @@
 $(document).ready(function() {
   $("#surveyQuestions").submit(function(event) {
     event.preventDefault();
-    // $("#python").hide();
-    // $("#javascript").hide();
-    // $("#ruby").hide();
+    $("#python").hide();
+    $("#javascript").hide();
+    $("#ruby").hide();
 
     const color = parseInt($("#color").val()); {
+    // if (!animal) {
     }
     const animal = parseInt($("#animal").val()); {
       // alert("Please select a color");
@@ -24,8 +25,9 @@ $(document).ready(function() {
       $("#python").show();
     } else if (score >= 6 && score <= 10) {
       $("#javascript").show();
-    } else (score >= 1 && score <= 5) 
+    } else { 
       $("#ruby").show();
+    }
   });
 });
 
