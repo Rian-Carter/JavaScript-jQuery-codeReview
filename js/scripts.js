@@ -17,13 +17,14 @@ $(document).ready(function() {
     const country = parseInt($("#country").val()); {
     }
     const score = color + animal + shape + activity + country;
+    clearForm();
 
 
-    if (score === 11 && score === 15 && score === 12 && score === 13 && score ===14) {
+    if (score >= 11 && score <= 15) {
       $("#python").show();
-    } else if (score === 6 && score === 10 && score === 7 && score === 8 && score === 9) {
+    } else if (score >= 6 && score <= 10) {
       $("#javascript").show();
-    } else (score === 1 && score === 5 && score === 2 && score === 3 && score ===4) 
+    } else (score >= 1 && score <= 5) 
       $("#ruby").show();
   });
 });
@@ -31,5 +32,7 @@ $(document).ready(function() {
 function clearForm(){
   $("#color").val("0");
   $("#animal").val("0");
-
+  $("#shape").val("0");
+  $("#activity").val("0");
+  $("#country").val("0");
 }
