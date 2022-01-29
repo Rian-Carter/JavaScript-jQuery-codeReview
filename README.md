@@ -16,7 +16,7 @@
 * Javascript
 * jQuery
 
-## This will help a user determine which language is the best for them based on the way they answer the questions.
+## This will help a user determine which language is the best for them based on their answers to the questions.
 
 ## Setup/Installation Requirements
 
