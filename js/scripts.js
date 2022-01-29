@@ -5,18 +5,35 @@ $(document).ready(function() {
     $("#javascript").hide();
     $("#ruby").hide();
 
-    const color = parseInt($("#color").val()); {
-    // if (!animal) {
+    const color = parseInt($("#color").val());
+    if (!animal) {
+      alert("please select a color");
     }
-    const animal = parseInt($("#animal").val()); {
-      // alert("Please select a color");
+
+
+    const animal = parseInt($("#animal").val());
+    if (!animal) {
+      alert("Please select an animal");
     }
-    const shape = parseInt($("#shape").val()); {
+
+
+    const shape = parseInt($("#shape").val());
+    if (!shape) {
+      alert("Please select a shape");
     }
-    const activity = parseInt($("#activity").val()); {
+
+
+    const activity = parseInt($("#activity").val());
+    if (!activity) {
+      alert("Please select an activity");
     }
-    const country = parseInt($("#country").val()); {
+
+
+    const country = parseInt($("#country").val());
+    if (!country) {
+      alert("Please select a country");
     }
+
     const score = color + animal + shape + activity + country;
     clearForm();
 
