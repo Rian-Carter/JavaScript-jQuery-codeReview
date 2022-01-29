@@ -2,16 +2,20 @@ $(document).ready(function() {
   $("#surveyQuestions").submit(function(event) {
     event.preventDefault();
 
-    const color = parseInt($("#question1").val());
+    const color = parseInt($("#color").val()); {
 
-    const animal = parseInt($("#question2").val());
+    }
+    const animal = parseInt($("#animal").val()); {
 
-    const shape = parseInt($("#question3").val());
+    }
+    const shape = parseInt($("#shape").val()); {
 
-    const activity = parseInt($("#question4").val());
+    }
+    const activity = parseInt($("#activity").val()); {
 
-    const country = parseInt($("#question5").val());
+    }
+    const country = parseInt($("#country").val()); {
 
-
-    
-  }
+    }
+    const number = color + animal + shape + activity + country;
+  });
