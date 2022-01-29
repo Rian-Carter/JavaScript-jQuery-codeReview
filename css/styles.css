@@ -1,3 +1,27 @@
 body {
   background-color: gray;
 }
+
+h1 {
+  width: auto;
+  border: 15px solid black;
+  padding:50px;
+  margin:50px;
+  text-align: center;
+}
+
+p {
+  width: auto;
+  border: 15px black;
+  padding: 50px;
+  font-weight: bold;
+}
+
+.row {
+  width: auto;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 50px;
+  font-size: x-small;
+
+}
