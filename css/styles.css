@@ -1,10 +1,16 @@
 body {
-  background-color: gray;
+  background-color: rgb(155, 211, 233);
+}
+
+#headerPhoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
   width: auto;
-  border: 5px solid black;
+  border: 5px solid white;
   padding:25px;
   margin:50px;
   text-align: center;
@@ -12,7 +18,7 @@ h1 {
 
 p {
   width: auto;
-  border: 5px dashed black;
+  border: 5px dashed rgb(1, 5, 255);
   padding: 25px;
   margin: 50px;
   font-weight: bold;
@@ -21,13 +27,17 @@ p {
 
 .row {
   width: auto;
-  border: 5px solid black;
+  border: 5px solid white;
   padding: 50px;
   margin: 50px;
   font-size: x-small;
 
 }
 
+
 #python, #javascript, #ruby {
   display: none;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
