@@ -25,3 +25,7 @@ p {
   font-size: x-small;
 
 }
+
+#python, #javascript, #ruby {
+  display: none;
+}
