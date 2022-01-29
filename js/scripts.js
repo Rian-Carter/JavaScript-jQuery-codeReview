@@ -1,10 +1,18 @@
+function clearForm(){
+  $("#color").val("0");
+  $("#animal").val("0");
+  $("#shape").val("0");
+  $("#activity").val("0");
+  $("#country").val("0");
+}
+
+
 $(document).ready(function() {
   $("#surveyQuestions").submit(function(event) {
     event.preventDefault();
     $("#python").hide();
     $("#javascript").hide();
     $("#ruby").hide();
-
     const color = parseInt($("#color").val());
     if (!color) {
       alert("please select a color");
@@ -30,10 +38,8 @@ $(document).ready(function() {
       alert("Please select a country");
       return;
     }
-
     const score = color + animal + shape + activity + country;
     clearForm();
-
 
     if (score >= 11 && score <= 15) {
       $("#python").show();
@@ -47,11 +53,3 @@ $(document).ready(function() {
     }
   });
 });
-
-function clearForm(){
-  $("#color").val("0");
-  $("#animal").val("0");
-  $("#shape").val("0");
-  $("#activity").val("0");
-  $("#country").val("0");
-}
