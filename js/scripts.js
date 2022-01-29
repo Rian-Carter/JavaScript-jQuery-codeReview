@@ -19,13 +19,17 @@ $(document).ready(function() {
     const score = color + animal + shape + activity + country;
 
 
-    if (score >= 1 && score <= 5) {
+    if (score === 11 && score === 15 && score === 12 && score === 13 && score ===14) {
       $("#python").show();
-    } else if (score >= 6 && score <= 10) {
+    } else if (score === 6 && score === 10 && score === 7 && score === 8 && score === 9) {
       $("#javascript").show();
-    } else {
+    } else (score === 1 && score === 5 && score === 2 && score === 3 && score ===4) 
       $("#ruby").show();
-    }
   });
 });
 
+function clearForm(){
+  $("#color").val("0");
+  $("#animal").val("0");
+
+}
